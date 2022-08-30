@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.assignment.dogbreeds.application.presentation.uimodels.Breed
-import com.assignment.dogbreeds.databinding.LayoutItemBreedListBinding
 import com.assignment.dogbreeds.databinding.LayoutItemBreedListFavouriteBinding
 import com.bumptech.glide.Glide
 import javax.inject.Inject

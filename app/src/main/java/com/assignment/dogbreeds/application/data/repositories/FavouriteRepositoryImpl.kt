@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
 class FavouriteRepositoryImpl @Inject constructor(
-   private val dataSource: FavouriteDataSource
+    private val dataSource: FavouriteDataSource
 ) : FavouriteRepository {
     override suspend fun getFavourites(): Flow<List<Breed>> {
         return dataSource.getFavourites()

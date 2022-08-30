@@ -43,7 +43,7 @@ class SubBreedsFragment : Fragment(R.layout.fragment_dogs_sub_breeds_list),
     }
 
     private fun observeUIState() {
-        lifecycleScope.launch{
+        lifecycleScope.launch {
             viewModel.uiState.flowWithLifecycle(lifecycle).collect(::updateUI)
         }
         viewModel.isFavourite.observe(viewLifecycleOwner) {

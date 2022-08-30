@@ -8,7 +8,7 @@ data class BreedListResponse(
 
     @SerializedName("message")
     @Expose
-    var message: Map<String,List<String>>,
+    var message: Map<String, List<String>>,
 
     @SerializedName("status")
     @Expose

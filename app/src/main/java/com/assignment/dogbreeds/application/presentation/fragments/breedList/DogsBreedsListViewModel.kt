@@ -18,6 +18,7 @@ class DogsBreedsListViewModel @Inject constructor(
     private val _uiState = MutableStateFlow<UiState>(UiState.Loading)
     val uiState: StateFlow<UiState>
         get() = _uiState
+
     init {
         loadBreeds()
     }
@@ -26,7 +27,7 @@ class DogsBreedsListViewModel @Inject constructor(
         _uiState.value = UiState.Loading
         viewModelScope.launch {
             val result: Result<List<Breed>> = breedsRepository.getBreeds()
-            _uiState.value= when (result) {
+            _uiState.value = when (result) {
                 is Result.Success -> UiState.Success(result.data!!)
                 is Result.Loading -> UiState.Loading
                 is Result.Error -> UiState.Error(result.errorType?.toString() ?: "Unknown Error")
@@ -34,6 +35,7 @@ class DogsBreedsListViewModel @Inject constructor(
 
         }
     }
+
     sealed class UiState {
         object Loading : UiState()
         class Error(val msg: String) : UiState()
