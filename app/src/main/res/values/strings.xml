@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dog-Breeds</string>
+    <string name="title_activity_dog_ceo_main">DogCeoMainActivity</string>
+
+    <string name="dummyName">Name</string>
+    <string name="dummyTitle">Title</string>
+</resources>
