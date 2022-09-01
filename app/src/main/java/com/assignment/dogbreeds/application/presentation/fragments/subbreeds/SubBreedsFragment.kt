@@ -70,6 +70,4 @@ class SubBreedsFragment : Fragment(R.layout.fragment_dogs_sub_breeds_list),
 
         }
     }
-
-
 }
