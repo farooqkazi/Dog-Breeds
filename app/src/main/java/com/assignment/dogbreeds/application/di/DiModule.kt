@@ -33,5 +33,4 @@ class DiModule {
     fun provideErrorTypeHandler(errorTypeHandlerImpl: ErrorTypeHandlerImpl): ErrorTypeHandler {
         return errorTypeHandlerImpl
     }
-
 }

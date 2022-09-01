@@ -13,8 +13,8 @@ import javax.inject.Inject
 class DogBreedRecyclerViewAdapter @Inject constructor() :
     ListAdapter<Breed, DogBreedRecyclerViewAdapter.BreedViewHolder>(DiffCallback()) {
     var listener: ((Breed) -> Unit)? = null
-    fun setOnBreedClickListener(pListner: (Breed) -> Unit) {
-        listener = pListner
+    fun setOnBreedClickListener(plistener: (Breed) -> Unit) {
+        listener = plistener
     }
 
     inner class BreedViewHolder(private val binding: LayoutItemBreedListBinding) :

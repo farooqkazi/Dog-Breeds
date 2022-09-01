@@ -15,9 +15,6 @@ import javax.inject.Inject
 class SubBreedAdapter @Inject constructor() :
     ListAdapter<Breed, SubBreedAdapter.BreedViewHolder>(DiffCallback()) {
     var listener: ((Breed) -> Unit)? = null
-    fun setOnBreedClickListener(pListner: (Breed) -> Unit) {
-        listener = pListner
-    }
 
     inner class BreedViewHolder(private val binding: LayoutItemSubBreedBinding) :
         RecyclerView.ViewHolder(binding.root) {
